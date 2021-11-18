@@ -31,6 +31,13 @@ Cualquier cosa me escribis
 
 //Si queres probar tu código acordate que tenes que tener instalado Node, y corres el archivo con "node clase10-11.js"
 
+
+
+
+
+
+
+
 const productos = [
     {
         name: "manzana",
@@ -134,3 +141,36 @@ const negociosConProductos = [
         ]
     }
 ]
+
+//1) Dada la lista con objetos de productos quedarse con los productos con precio mayor a 90
+
+function ProductosMayoresA90 (){
+    return productos.filter(obj => obj.precio >= 90)
+}
+console.log(ProductosMayoresA90())
+
+//Dificultad: Si lo haces combinado al punto 1 debería ser Medio/dificil. Si no sale dejalo y lo vemos después
+//2) Usando la función del punto 1. Quedarse con los productos con precio mayor a 90 y que además sean comestibles
+//IMPORTANTE: intentar hacer una función que resuelva lo del punto 1 y crear otra función para el punto 2,
+//donde agarre por variable lo que devuelve la función del punto 1.
+
+
+function ProductosMayores90YComestibles (){
+    return productos.filter(obj => obj.precio >= 90 && obj.comestible)
+}
+
+console.log(ProductosMayores90YComestibles())
+
+//3) De la lista productos obtener una lista de los nombres de todos los productos (ver que mensaje se le puede aplicar a la lista, hay que transformar la lista)
+//oBJETO.MENSAJE(ARGUMENTOS)
+
+function ListaDeTodosLosProductos (){
+     return (productos.filter(obj => obj.name.match))
+
+}
+
+console.log (ListaDeTodosLosProductos(name))
+
+
+
+
